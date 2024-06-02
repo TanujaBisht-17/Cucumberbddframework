@@ -1,11 +1,14 @@
 package PageObject;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Add_new_customer {
+import StepDefination.Baseclass;
+
+public class Add_new_customer extends Baseclass {
 	
 	 WebDriver ldriver;
 	 
@@ -85,7 +88,8 @@ public void click_customer_menu()
 
 public void click_customer()
 {  
-	customer.click();
+	//customer.click();
+	clickUsingJs(customer,ldriver);
 }
 
 public void Add_button()
