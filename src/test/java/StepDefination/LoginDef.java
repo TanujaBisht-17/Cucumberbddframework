@@ -54,7 +54,7 @@ public class LoginDef extends Baseclass {
 			break;
 			
 		case "edge":
-			System.out.println("Launch edge browser");
+			System.out.println("New browser");
 			//System.setProperty("webdriver.edge.driver", "msedgedriver.exe"); 
 			WebDriverManager.edgedriver().setup();
 			this.driver=new EdgeDriver();
